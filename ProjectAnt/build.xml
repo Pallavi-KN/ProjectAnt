@@ -52,10 +52,5 @@
             <classpath refid="ProjectAnt.classpath"/>
         </java>
     </target>
-    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false">
-    	artifactspattern="bin/Greet.class]"
-    	<!--publications>
-    	        <artifact name="Greet" type="class" conf="bin"/>
-    	    </publications-->
-    </ivy:publish>
-</project>
+    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false" artifactspattern="bin/Greet.class"/>
+  </project>
