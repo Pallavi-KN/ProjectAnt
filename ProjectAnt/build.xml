@@ -53,8 +53,9 @@
         </java>
     </target>
     <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false">
-    	<publications>
+    	artifactspattern="bin/Greet.class]"
+    	<!--publications>
     	        <artifact name="Greet" type="class" conf="bin"/>
-    	    </publications>
+    	    </publications-->
     </ivy:publish>
 </project>
