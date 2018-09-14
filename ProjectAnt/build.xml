@@ -52,5 +52,5 @@
             <classpath refid="ProjectAnt.classpath"/>
         </java>
     </target>
-    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false" organisation="KN" module="demo" revision="1.0-rel" artifactspattern="bin/Greet.class"/>
+    <ivy:publish resolver="http://localhost:8040/artifactory/ivy-dev" overwrite="true" publishivy="false" organisation="KN" module="demo" revision="1.0-rel" artifactspattern="bin/Greet.class"/>
   </project>
