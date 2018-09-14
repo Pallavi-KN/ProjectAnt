@@ -52,7 +52,7 @@
             <classpath refid="ProjectAnt.classpath"/>
         </java>
     </target>
-    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false" depends="build">
+    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false">
     	<publications>
     	        <artifact name="Greet" type="class" conf="bin"/>
     	    </publications>
