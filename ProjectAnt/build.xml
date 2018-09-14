@@ -52,6 +52,6 @@
             <classpath refid="ProjectAnt.classpath"/>
         </java>
     </target>
-    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false">
+    <ivy:publish resolver="artifactory-publish" overwrite="true" publishivy="false" depends="build">
     </ivy:publish>
 </project>
