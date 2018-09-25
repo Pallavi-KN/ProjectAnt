@@ -36,7 +36,7 @@
             <classpath refid="ProjectAnt.classpath"/>
         </javac>	
 		<ivy:retrieve/>		
-		<ivy:publish  resolver="artifactory-dev" publishivy="false">
+		<ivy:publish  resolver="artifactory-dev" publishivy="true">
 		<artifacts pattern="bin/Greet.class"/>
 		<artifacts/>
 		</ivy:publish>
