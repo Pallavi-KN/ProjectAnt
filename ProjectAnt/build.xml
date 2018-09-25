@@ -9,8 +9,11 @@
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
     <path id="ProjectAnt.classpath">
-        <pathelement location="bin"/>
+    <pathelement location="bin"/>
     </path>
+	
+	<ivy:settings file="ivysettings.xml" />
+	
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -31,7 +34,12 @@
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="ProjectAnt.classpath"/>
-        </javac>
+        </javac>	
+		<ivy:retrieve/>		
+		<ivy:publish  resolver="artifactory-dev" publishivy="false">
+		<artifacts pattern="bin/Greet.class"/>
+		<artifacts/>
+		</ivy:publish>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
     <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
@@ -51,6 +59,5 @@
         <java classname="Greet" failonerror="true" fork="yes">
             <classpath refid="ProjectAnt.classpath"/>
         </java>
-    </target>
-    <ivy:publish resolver="http://localhost:8040/artifactory/ivy-dev" overwrite="true" publishivy="false" organisation="KN" module="demo" revision="1.0-rel" artifactspattern="bin/Greet.class"/>
+    </target>    
   </project>

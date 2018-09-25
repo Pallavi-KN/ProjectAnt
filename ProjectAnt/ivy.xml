@@ -1,0 +1,8 @@
+<ivy-module version="2.0">
+ <info organisation="com.KN" module="Ant-project" revision="1.0-SNAPSHOT"/>
+ <dependencies/>
+ <!--dependency org="org.jbundle.util" name="org.jbundle.util.jbackup" rev="2.0.0"/>
+    ...
+  </dependencies-->
+
+</ivy-module>
