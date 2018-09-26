@@ -1,6 +1,6 @@
 <ivysettings>
   <property name="organization" value="com.KN"/>
-  <property name="module" value="Ant-project"/>
+  <property name="module" value="projectAnt"/>
   <property name="revision" value="1.0-RELEASE"/>
   <property name="artifact" value="Greet"/>
   <!--property name="revision" value="1.0"/-->

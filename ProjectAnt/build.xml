@@ -36,9 +36,10 @@
             <classpath refid="ProjectAnt.classpath"/>
         </javac>	
 		<ivy:retrieve/>		
-		<ivy:publish  resolver="artifactory-dev" publishivy="false">
-		<artifacts pattern="bin/Greet.class"/>
+		<ivy:publish  resolver="artifactory-dev" publishivy="true">
+		<artifacts pattern="bin/Greet.class"/>		
 		<artifacts/>
+		<srcivypattern pattern="./ivy.xml"/>
 		</ivy:publish>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
