@@ -4,7 +4,7 @@
   <property name="revision" value="1.0-RELEASE"/>
   <property name="artifact" value="Greet"/>
   <!--property name="revision" value="1.0"/-->
-  <property name="rev" value="1.0"/>
+  <property name="rev" value="3.0"/>
   <property name="ext" value="class"/>
   <!--settings defaultResolver="artifactory"/-->
   <credentials host="localhost"
