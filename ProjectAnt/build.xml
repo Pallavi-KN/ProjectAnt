@@ -37,7 +37,7 @@
         </javac>	
 		<ivy:retrieve/>		
 		<!--ivy:publish  resolver="artifactory-dev" publishivy="false"-->
-		<ivy:publish  resolver="artifactory-dev" overwrite="true" publishivy="true" srcivypattern="ivy.xml">
+		<ivy:publish  resolver="artifactory-dev" publishivy="true" srcivypattern="ivy.xml">
 		<artifacts pattern="bin/Greet.class"/>		
 		<artifacts/>
 		<!--srcivypattern pattern="./ivy.xml"/-->
