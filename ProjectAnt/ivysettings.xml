@@ -15,7 +15,7 @@
         <!-- You can use  m2compatible="true" instead of specifying your own pattern -->
         <artifact pattern=
           "http://localhost:8040/artifactory/ivy-release-local/${organization}/${module}/${revision}/${artifact}-${rev}.${ext}"/>
-        <ivy pattern="http://localhost:8080/artifactory/ivy-release-local/${organization}/${module}/ivy.xml"/>
+        <ivy pattern="http://localhost:8040/artifactory/ivy-release-local/${organization}/${module}/${revision}/ivy.xml"/>
     </url>
 </resolvers>				  
   <!--property name="organization" value="com.kn"/>
